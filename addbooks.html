@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian-Add Book</title>
+
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="addbooks.css">
+</head>
+
+<body>
+
+    <div class="section-1">
+        <!--navigation bar-->
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="name">
+                <img class="logo" src="imageskac/SCTCE.jpg" alt="image">
+                <i>LIBRARYSCT</i>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav moveright">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""><span class="sr-only">(current)</span>ADD BOOK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchbook.html">SEARCH BOOK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deletebook.html">DELETE BOOK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="updatebook.html">UPDATE BOOK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viewallbooks.html">VIEW ALL BOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">LOGOUT</a>
+                    </li>
+                </ul>
+                <h5 class="result" id="message"></h5>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>ADD BOOK</h1>
+        <form id="box1" action="addbook.jsp" method="post">
+            <div class="inp">
+                <input type="text" placeholder="BOOK ID" id="InputCID" name="Bid">
+            </div>
+            <div class="inp-title">
+                <input type="text" placeholder="BOOK NAME" id="InputCTitle" name="Btitle">
+            </div>
+            <div class="inp-name">
+                <input type="text" placeholder="AUTHOR NAME" id="InputCName" name="Bname">
+            </div>
+            <div class="inp-quantity">
+                <input type="text" placeholder="NUMBER OF COPIES" id="InputCQuantity" name="Bquantity">
+            </div>
+            <div class="button">
+                <button>ADD BOOK</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src=""></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+<script src="bootstrap-4-alpha.6-dist/js/bootstrap.min.js"></script>
+
+</html>
